@@ -49,5 +49,9 @@ body {
 }
 
 footer {
-	margin-top: 38%;
+	margin-top: 35%;
+}
+
+p {
+	font-weight: bold;
 }

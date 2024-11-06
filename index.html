@@ -16,17 +16,19 @@
     <script>
         function blahaj() {
         var blajahtext = document.getElementById("myInput").value;
-        puter.ai.chat(`Please create a summary of the following text in a way that makes it seem like it was created by sharks named blajah: ${blajahtext}`).then(puter.print);
+        puter.ai.chat(`Please create a summary of the following text in a way that makes it seem like it was created by a type of shark called Blahaj: ${blajahtext}`).then((results)=>{
+            document.getElementById("results").innerHTML=results
+        });
         }
 </script>
 <div>
     <h1 class="title">Blahaj Text Summarizer</h1>
 <input type="text" id="myInput" class="bg-gray-50 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the text you want blajah summarized">
 <a href="javascript:blahaj()" class="myButton">Blahajrize it!</a>
-<p>Results will go here</p>
+<p id="results">Results will go here (Please wait about 10 seconds for results to be generated)</p>
 <footer>
     <b>
-        Please wait a few seconds for your summary to be generated after pressing button. Reload the site to reset
+        ‌
     </b>
 </footer>
 </div>
