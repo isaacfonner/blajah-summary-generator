@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Blahaj Insult Generator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://js.puter.com/v2/"></script>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        function blahaj() {
+        var blajahtext = document.getElementById("myInput").value;
+        puter.ai.chat(`Please create a summary of the following text in a way that makes it seem like it was created by sharks named blajah: ${blajahtext}`).then(puter.print);
+        }
+</script>
+<div>
+    <h1 class="title">Blahaj Text Summarizer</h1>
+<input type="text" id="myInput" class="bg-gray-50 text-gray-900 text-sm rounded-lg p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the text you want blajah summarized">
+<a href="javascript:blahaj()" class="myButton">Blahajrize it!</a>
+<p>Results will go here</p>
+<footer>
+    <b>
+        Please wait a few seconds for your summary to be generated after pressing button. Reload the site to reset
+    </b>
+</footer>
+</div>
+</body>
+</html>
